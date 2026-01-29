@@ -1,0 +1,6 @@
+// Version: 1.0.0
+actor {
+  stable codeimage : [Nat8];
+  stable itemname : Text;
+  stable var ownerid : Principal
+};

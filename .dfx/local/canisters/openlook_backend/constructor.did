@@ -1,0 +1,12 @@
+service : {
+  checkorginalowner: (nftid: principal) -> (principal) query;
+  createnft: (image: vec nat8, name: text) -> (principal);
+  finalpurchase: (nftid: principal, orginalowner: principal, buyerowner:
+   principal) -> (text);
+  getitemstatus: (nftid: principal) -> (bool) query;
+  getlistedids: () -> (vec principal) query;
+  getusersid: (user: principal) -> (vec principal) query;
+  openlookid: () -> (principal) query;
+  pricelistednfts: (nftid: principal) -> (nat) query;
+  sellitem: (nftid: principal, price: nat) -> (text);
+}

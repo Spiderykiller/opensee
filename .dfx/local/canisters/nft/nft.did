@@ -1,0 +1,9 @@
+type miniter = 
+ service {
+   getcanid: () -> (principal) query;
+   getimage: () -> (vec nat8) query;
+   getname: () -> (text) query;
+   getowner: () -> (principal) query;
+   transferownership: (newowner: principal) -> (text);
+ };
+service : (name: text, id: principal, image: vec nat8) -> miniter

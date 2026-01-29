@@ -1,0 +1,8 @@
+type miniter = service {
+  getcanid : () -> (principal) query;
+  getimage : () -> (blob) query;
+  getname : () -> (text) query;
+  getowner : () -> (principal) query;
+  transferownership : (principal) -> (text);
+};
+service : miniter
