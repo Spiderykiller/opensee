@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "openlook_backend": {
+      "main": "src/openlook_backend/main.mo",
+      "type": "motoko"
+    },
+    "nft": {
+      "main": "src/NFT/nft.mo",
+      "type": "motoko"
+     },
+    "openlook_frontend": {
+      "dependencies": [
+        "openlook_backend"
+      ],
+      "source": [
+        "src/openlook_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "openlook_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
