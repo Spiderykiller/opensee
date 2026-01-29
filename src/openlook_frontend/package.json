@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "npm i && dfx canister create openlook_backend && dfx generate openlook_backend && dfx deploy",
     "start": "vite --port 3000",
-    "prebuild": "echo Skipping dfx on Vercel",
+    "prebuild": "dfx generate",
     "build": "tsc && vite build",
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\""
   },
