@@ -1,0 +1,6 @@
+service : {
+  freetoken: () -> (text);
+  getBalance: (account: principal) -> (nat) query;
+  getSymbol: () -> (text) query;
+  transfer: (reciever: principal, amounts: nat) -> (text);
+}
